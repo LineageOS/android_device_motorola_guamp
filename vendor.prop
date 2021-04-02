@@ -1,7 +1,7 @@
 # Audio
 persist.vendor.audio.dualmic.config=endfire
 persist.vendor.audio.fluence.voicecall=false
-persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicecomm=false
 
 # Camera
 persist.vendor.camera.physical.num=5
