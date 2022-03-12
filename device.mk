@@ -23,6 +23,11 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
+# FPSensor Gestures
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/usr/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
+    $(LOCAL_PATH)/usr/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
