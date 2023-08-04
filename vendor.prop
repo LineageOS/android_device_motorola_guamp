@@ -2,6 +2,7 @@
 persist.vendor.audio.dualmic.config=endfire
 persist.vendor.audio.fluence.voicecall=false
 persist.vendor.audio.fluence.voicecomm=true
+ro.audio.monitorRotation=true
 
 # Camera
 persist.vendor.camera.physical.num=4
