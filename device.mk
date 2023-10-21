@@ -30,6 +30,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/usr/keylayout/uinput_nav.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput_nav.kl \
     $(LOCAL_PATH)/usr/idc/uinput_nav.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput_nav.idc
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.bengal
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
@@ -39,7 +43,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Permissions
 PRODUCT_COPY_FILES += \
