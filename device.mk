@@ -23,12 +23,18 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
+<<<<<<< PATCH SET (384e41 guamp: Enable notification light)
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.bengal
+=======
 # FPSensor Gestures
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/usr/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/usr/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(LOCAL_PATH)/usr/keylayout/uinput_nav.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput_nav.kl \
     $(LOCAL_PATH)/usr/idc/uinput_nav.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput_nav.idc
+>>>>>>> BASE      (e04627 guamp: load Abov Sar Module)
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -39,7 +45,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Permissions
 PRODUCT_COPY_FILES += \
