@@ -258,3 +258,14 @@ vendor/firmware/hlt_Himax_mpfw.bin
 vendor/firmware/hlt_hx_criteria.csv
 vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin
+
+# Touchscreen firmware (recovery)
+vendor/firmware/ICNL9911.bin:recovery/root/vendor/firmware/ICNL9911.bin
+vendor/firmware/ILITEK_FW_HLT.hex:recovery/root/vendor/firmware/ILITEK_FW_HLT.hex
+vendor/firmware/ILITEK_FW_TM.hex:recovery/root/vendor/firmware/ILITEK_FW_TM.hex
+vendor/firmware/NT36xxx_MP_Setting_Criteria_6020.csv:recovery/root/vendor/firmware/NT36xxx_MP_Setting_Criteria_6020.csv
+vendor/firmware/hlt_Himax_firmware.bin:recovery/root/vendor/firmware/hlt_Himax_firmware.bin
+vendor/firmware/hlt_Himax_mpfw.bin:recovery/root/vendor/firmware/hlt_Himax_mpfw.bin
+vendor/firmware/hlt_hx_criteria.csv:recovery/root/vendor/firmware/hlt_hx_criteria.csv
+vendor/firmware/novatek_ts_fw.bin:recovery/root/vendor/firmware/novatek_ts_fw.bin
+vendor/firmware/novatek_ts_mp.bin:recovery/root/vendor/firmware/novatek_ts_mp.bin
