@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_caprip.mk
+    $(LOCAL_DIR)/lineage_guamp.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_caprip-user \
-    lineage_caprip-userdebug \
-    lineage_caprip-eng
+    lineage_guamp-user \
+    lineage_guamp-userdebug \
+    lineage_guamp-eng

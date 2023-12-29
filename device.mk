@@ -10,7 +10,7 @@ $(call inherit-product, device/motorola/sm6225-common/bengal.mk)
 # A/B
 AB_OTA_PARTITIONS += \
     vbmeta_system \
-    vendor_boot
+    recovery
 
 # Audio - Configs
 PRODUCT_COPY_FILES += \
@@ -63,13 +63,13 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc
 
 # Shipping API level
-BOARD_API_LEVEL := 30
-BOARD_SHIPPING_API_LEVEL := 30
-PRODUCT_SHIPPING_API_LEVEL := 30
+BOARD_API_LEVEL := 29
+BOARD_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 29
 
-# Vendor ramdisk
+# Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom_ramdisk:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom_ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/motorola/caprip/caprip-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/guamp/guamp-vendor.mk)
