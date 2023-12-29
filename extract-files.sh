@@ -14,7 +14,7 @@ fi
 
 set -e
 
-export DEVICE=caprip
+export DEVICE=guamp
 export DEVICE_COMMON=sm6225-common
 export VENDOR=motorola
 
