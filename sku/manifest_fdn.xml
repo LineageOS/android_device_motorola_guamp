@@ -1,6 +1,7 @@
 <!--
     Input:
         manifest_f.xml
+        manifest_n.xml
 -->
 <manifest version="2.0" type="device">
     <hal format="hidl" override="true">
@@ -14,16 +15,34 @@
         <fqname>@1.2::INfc/default</fqname>
     </hal>
     <hal format="hidl" override="true">
-        <name>android.hardware.secure_element</name>
+        <name>com.fingerprints.extension</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.0</version>
         <interface>
-            <name>ISecureElement</name>
-            <instance>SIM1</instance>
-            <instance>SIM2</instance>
+            <name>IFingerprintEngineering</name>
+            <instance>default</instance>
         </interface>
-        <fqname>@1.2::ISecureElement/SIM1</fqname>
-        <fqname>@1.2::ISecureElement/SIM2</fqname>
+        <interface>
+            <name>IFingerprintNavigation</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFingerprintSensorTest</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IFingerprintEngineering/default</fqname>
+        <fqname>@1.0::IFingerprintNavigation/default</fqname>
+        <fqname>@1.0::IFingerprintSensorTest/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>IGoodixFingerprintDaemonV3</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@3.0::IGoodixFingerprintDaemonV3/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.nxp.nxpnfc</name>
