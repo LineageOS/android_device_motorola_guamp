@@ -16,15 +16,21 @@ TARGET_BOOTLOADER_BOARD_NAME := guamp
 TARGET_SCREEN_DENSITY := 280
 
 # HIDL
-ODM_MANIFEST_SKUS += b bc d dc dn dnc f fc n nc
+ODM_MANIFEST_SKUS += b c d dc dn dnc fb fc fd fdc fdn fdnc fn fnc n nc
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
-ODM_MANIFEST_BC_FILES := $(DEVICE_PATH)/sku/manifest_bc.xml
+ODM_MANIFEST_C_FILES := $(DEVICE_PATH)/sku/manifest_c.xml
 ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/sku/manifest_d.xml
 ODM_MANIFEST_DC_FILES := $(DEVICE_PATH)/sku/manifest_dc.xml
 ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/sku/manifest_dn.xml
 ODM_MANIFEST_DNC_FILES := $(DEVICE_PATH)/sku/manifest_dnc.xml
-ODM_MANIFEST_F_FILES := $(DEVICE_PATH)/sku/manifest_f.xml
+ODM_MANIFEST_FB_FILES := $(DEVICE_PATH)/sku/manifest_fb.xml
 ODM_MANIFEST_FC_FILES := $(DEVICE_PATH)/sku/manifest_fc.xml
+ODM_MANIFEST_FD_FILES := $(DEVICE_PATH)/sku/manifest_fd.xml
+ODM_MANIFEST_FDC_FILES := $(DEVICE_PATH)/sku/manifest_fdc.xml
+ODM_MANIFEST_FDN_FILES := $(DEVICE_PATH)/sku/manifest_fdn.xml
+ODM_MANIFEST_FDNC_FILES := $(DEVICE_PATH)/sku/manifest_fdnc.xml
+ODM_MANIFEST_FN_FILES := $(DEVICE_PATH)/sku/manifest_fn.xml
+ODM_MANIFEST_FNC_FILES := $(DEVICE_PATH)/sku/manifest_fnc.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
 ODM_MANIFEST_NC_FILES := $(DEVICE_PATH)/sku/manifest_nc.xml
 
