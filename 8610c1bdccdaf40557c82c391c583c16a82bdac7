@@ -34,6 +34,24 @@
       "parentUuid": "5b011d5a_039f8b95",
       "revId": "8610c1bdccdaf40557c82c391c583c16a82bdac7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f361afb4_de1f10f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33259
+      },
+      "writtenOn": "2024-01-09T10:48:19Z",
+      "side": 1,
+      "message": "\u003e \u003e why?\n\u003e \n\u003e offended adb_root\n\nFAILED:                                                         build/make/core/main.mk:1326: warning:  device/motorola/guamp/lineage_guamp.mk includes non-existent modules in PRODUCT_PACKAGESOffending entries:                                              adb_root                                                        build/make/core/main.mk:1326: error: Build failed.              16:17:12 ckati failed with: exit status 1",
+      "parentUuid": "facccff8_911c7e46",
+      "revId": "8610c1bdccdaf40557c82c391c583c16a82bdac7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
