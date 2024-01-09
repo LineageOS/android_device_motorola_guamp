@@ -21,8 +21,7 @@ on fs
    insmod /vendor/lib/modules/nova_0flash_mmi.ko
    insmod /vendor/lib/modules/qpnp_adaptive_charge.ko
    insmod /vendor/lib/modules/qpnp-power-on-mmi.ko
-   insmod /vendor/lib/modules/sensors_class.ko
-   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_snd_soc_aw882xx
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules sensor_class abov_sar_mmi_overlay audio_snd_soc_aw882xx
 
 on post-fs-data
    # Load DLKM that can afford being loaded later
@@ -40,17 +39,7 @@ on early-boot
    mkdir /mnt/vendor/persist/goodix 0770 system system
 
 on boot
-   # Change ownership for capsensor
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch0/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch0/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch1/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch1/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch2/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch2/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch3/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch3/poll_delay
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/enable
-   chown root input /sys/class/sensors/Moto\ CapSense\ Ch4/poll_delay
+   # change permission for capsensor
    chown system system /sys/class/capsense/reset
    chown system system /sys/class/capsense/int_state
 
