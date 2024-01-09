@@ -52,6 +52,24 @@
       "parentUuid": "facccff8_911c7e46",
       "revId": "8610c1bdccdaf40557c82c391c583c16a82bdac7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c489cdda_d015e7eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2024-01-09T11:47:03Z",
+      "side": 1,
+      "message": "it will fine after this topic merged https://review.lineageos.org/q/topic:%2214-adbroot%22",
+      "parentUuid": "f361afb4_de1f10f3",
+      "revId": "8610c1bdccdaf40557c82c391c583c16a82bdac7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
