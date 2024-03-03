@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e51b08fb_90784163",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2024-03-03T17:17:38Z",
+      "side": 1,
+      "message": "Hold this until I add all the common keylayout files to the sm6225 common device tree (I\u0027ll try to do it tomorrow). Maybe some of these are common to all devices (I can\u0027t remember, I have to check).",
+      "revId": "6489c7812eb8b1a55f720eafeca8f92faeaef0c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
