@@ -58,12 +58,6 @@
     <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia14" value="0" />
     <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia15" value="0" />
     <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia16" value="0" />
-    <ctl name="PRI_MI2S_RX Port Mixer SLIM_8_TX" value="0" />
-    <ctl name="USB_AUDIO_RX Port Mixer SLIM_8_TX" value="0" />
-    <ctl name="SLIMBUS_7_RX Port Mixer SLIM_8_TX" value="0" />
-    <ctl name="PRI_MI2S_RX_DL_HL Switch" value="0" />
-    <ctl name="USB_DL_HL Switch" value="0" />
-    <ctl name="SLIMBUS7_DL_HL Switch" value="0" />
     <ctl name="MultiMedia5 Mixer AFE_PCM_TX" value="0" />
     <ctl name="MultiMedia5 Mixer TX_CDC_DMA_TX_3" value="0" />
     <ctl name="MultiMedia5 Mixer TX_CDC_DMA_TX_4" value="0" />
@@ -170,7 +164,6 @@
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia14" value="0" />
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia15" value="0" />
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia16" value="0" />
-    <ctl name="aw882xx_fade_dealyed_time" value="0" />
     <!-- HFP start -->
     <ctl name="HFP_SLIM7_UL_HL Switch" value="0" />
     <!-- ctl name="RX_CDC_DMA_RX_1 Port Mixer SLIM_7_TX" value="0" / -->
@@ -443,9 +436,6 @@
     <!-- ctl name="MultiMedia16 Mixer SLIM_8_TX" value="0" / -->
     <ctl name="MultiMedia16 Mixer USB_AUDIO_TX" value="0" />
 
-    <!-- for smartpa config -->
-    <ctl name="PRIM_MI2S_RX Channels" value="One" />
-
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="gsm-mode">
         <ctl name="RX_GSM mode Enable" value="ON" />
@@ -709,14 +699,14 @@
         <path name="low-latency-playback speaker" />
     </path>
 
-    <path name="low-latency-playback speaker-and-usb-headset">
-        <path name="low-latency-playback speaker" />
-        <path name="low-latency-playback usb-headset" />
-    </path>
-
     <path name="low-latency-playback speaker-safe-and-usb-headphones">
         <path name="low-latency-playback usb-headphones" />
         <path name="low-latency-playback speaker" />
+    </path>
+
+    <path name="low-latency-playback speaker-and-usb-headset">
+	<path name="low-latency-playback speaker" />
+	<path name="low-latency-playback usb-headset" />
     </path>
 
     <path name="low-latency-playback headphones">
@@ -2062,32 +2052,14 @@
 
     <path name="play-fm">
         <ctl name="SLIMBUS_8 LOOPBACK Volume" value="1" />
-        <ctl name="RX_CDC_DMA_RX_0 Port Mixer SLIM_8_TX" value="1" />
-        <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
-    </path>
-
-    <path name="play-fm speaker">
-        <ctl name="SLIMBUS_8 LOOPBACK Volume" value="1" />
-        <ctl name="PRI_MI2S_RX Port Mixer SLIM_8_TX" value="1" />
-        <ctl name="PRI_MI2S_RX_DL_HL Switch" value="1" />
+        <ctl name="RX_CDC_DMA_RX_1 Port Mixer SLIM_8_TX" value="1" />
+        <ctl name="RX_CDC_DMA_RX_1_DL_HL Switch" value="1" />
     </path>
 
     <path name="play-fm headphones">
         <ctl name="SLIMBUS_8 LOOPBACK Volume" value="1" />
         <ctl name="RX_CDC_DMA_RX_0 Port Mixer SLIM_8_TX" value="1" />
         <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
-    </path>
-
-    <path name="play-fm usb-headset">
-        <ctl name="SLIMBUS_8 LOOPBACK Volume" value="1" />
-        <ctl name="USB_AUDIO_RX Port Mixer SLIM_8_TX" value="1" />
-        <ctl name="USB_DL_HL Switch" value="1" />
-    </path>
-
-    <path name="play-fm bt-a2dp">
-        <ctl name="SLIMBUS_8 LOOPBACK Volume" value="1" />
-        <ctl name="SLIMBUS_7_RX Port Mixer SLIM_8_TX" value="1" />
-        <ctl name="SLIMBUS7_DL_HL Switch" value="1" />
     </path>
 
     <path name="play-fm headset">
@@ -2409,6 +2381,14 @@
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
     </path>
 
+    <path name="voicemmode1-call speaker-and-usb-headphones">
+        <path name="voicemmode1-call usb-headphones" />
+    </path>
+
+    <path name="voicemmode1-call speaker-and-usb-headset">
+        <path name="voicemmode1-call usb-headset" />
+    </path>
+
     <path name="voicemmode1-call usb-headset">
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer USB_AUDIO_TX_MMode1" value="1" />
@@ -2473,6 +2453,14 @@
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
     </path>
 
+    <path name="voicemmode2-call speaker-and-usb-headphones">
+        <path name="voicemmode2-call usb-headphones" />
+    </path>
+
+    <path name="voicemmode2-call speaker-and-usb-headset">
+        <path name="voicemmode2-call usb-headset" />
+    </path>
+
     <path name="voicemmode2-call usb-headset">
         <ctl name="USB_AUDIO_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer USB_AUDIO_TX_MMode2" value="1" />
@@ -2481,22 +2469,6 @@
     <path name="voicemmode2-call display-port-and-usb-headset-mic">
         <ctl name="DISPLAY_PORT_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer USB_AUDIO_TX_MMode2" value="1" />
-    </path>
-
-    <path name="voicemmode1-call speaker-and-usb-headphones">
-        <path name="voicemmode1-call usb-headphones" />
-    </path>
-
-    <path name="voicemmode1-call speaker-and-usb-headset">
-        <path name="voicemmode1-call usb-headset" />
-    </path>
-
-    <path name="voicemmode2-call speaker-and-usb-headphones">
-        <path name="voicemmode2-call usb-headphones" />
-    </path>
-
-    <path name="voicemmode2-call speaker-and-usb-headset">
-        <path name="voicemmode2-call usb-headset" />
     </path>
 
     <path name="voicemmode2-call display-port">
@@ -3013,6 +2985,7 @@
     </path>
 
     <path name="spkr-rx-calib">
+        <ctl name="WSA_CDC_DMA_RX_0_DL_HL Switch"  value="1" />
     </path>
 
     <path name="spkr-vi-record">
@@ -3209,12 +3182,10 @@
     </path>
 
     <path name="voice-speaker">
-        <ctl name="aw882xx_fade_dealyed_time" value="100" />
     </path>
 
     <path name="voice-speaker-stereo">
         <path name="speaker" />
-        <ctl name="aw882xx_fade_dealyed_time" value="100" />
     </path>
 
     <path name="voice-speaker-2">
@@ -3383,6 +3354,8 @@
         <ctl name="TX DEC2 MUX" value="SWR_MIC" />
         <ctl name="TX SMIC MUX2" value="SWR_MIC0" />
         <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC1 Volume" value="8" />
+        <ctl name="ADC2 Volume" value="8" />
     </path>
 
     <path name="camcorder-mic-bf-reverse">
@@ -3396,6 +3369,8 @@
         <ctl name="TX SMIC MUX2" value="SWR_MIC4" />
         <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC1 Volume" value="8" />
+        <ctl name="ADC2 Volume" value="8" />
     </path>
 
     <path name="dmic-endfire">
