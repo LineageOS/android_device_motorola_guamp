@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b9316ff_87fabde4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33259
+      },
+      "writtenOn": "2024-03-09T05:58:07Z",
+      "side": 1,
+      "message": "not able to send message on WhatsApp 🫤",
+      "revId": "57c073214590de6dd05c5098fbb477bc17d8f28e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
