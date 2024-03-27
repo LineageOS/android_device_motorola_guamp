@@ -16,6 +16,24 @@
       "message": "The commit message should be modified by removing \"adds a keyboard layout (...)\", because the mentioned kl and idc files still have to be added to the vendor repository.\nPlease refer to \u003chttps://github.com/TheMuppets/proprietary_vendor_motorola_caprip/commit/9cad3cff05f681e727caa194f64fb61424c3fe55\u003e",
       "revId": "7020a603761bb2ed6c91ed3ba784eb82abe3e864",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40f8a3fa_1f473c1b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-03-27T16:03:50Z",
+      "side": 1,
+      "message": "They were added in https://review.lineageos.org/c/LineageOS/android_device_motorola_guamp/+/384788",
+      "parentUuid": "fa0ea417_7dce3bce",
+      "revId": "7020a603761bb2ed6c91ed3ba784eb82abe3e864",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
