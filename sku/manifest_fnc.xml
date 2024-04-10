@@ -39,11 +39,6 @@
         <fqname>@2.0::INxpNfc/default</fqname>
     </hal>
     <hal format="hidl" override="true">
-        <name>vendor.nxp.nxpnfclegacy</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::INxpNfcLegacy/default</fqname>
-    </hal>
-    <hal format="hidl" override="true">
         <name>vendor.qti.hardware.data.connection</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::IDataConnection/slot1</fqname>
