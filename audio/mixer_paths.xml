@@ -458,7 +458,7 @@
 
     <path name="echo-reference headphones">
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="RX_CDC_DMA_RX_0" />
-        <ctl name="EC Reference Channels" value="Two"/>
+        <ctl name="EC Reference Channels" value="One"/>
     </path>
 
     <path name="echo-reference headset">
@@ -467,22 +467,22 @@
 
     <path name="echo-reference headphones-44.1">
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="RX_CDC_DMA_RX_0" />
-        <ctl name="EC Reference Channels" value="Two"/>
+        <ctl name="EC Reference Channels" value="One"/>
     </path>
 
     <path name="echo-reference usb-headset">
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="USB_AUDIO_RX" />
-        <ctl name="EC Reference Channels" value="Two"/>
+        <ctl name="EC Reference Channels" value="One"/>
     </path>
 
     <path name="echo-reference usb-headphones">
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="USB_AUDIO_RX" />
-        <ctl name="EC Reference Channels" value="Two"/>
+        <ctl name="EC Reference Channels" value="One"/>
     </path>
 
     <path name="echo-reference bt-sco">
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="SLIM_7_RX" />
-        <ctl name="EC Reference Channels" value="Two"/>
+        <ctl name="EC Reference Channels" value="One"/>
     </path>
 
     <path name="echo-reference bt-sco-wb">
@@ -510,7 +510,7 @@
 
     <path name="echo-reference-voip headphones">
         <ctl name="AUDIO_REF_EC_UL10 MUX" value="RX_CDC_DMA_RX_0" />
-        <ctl name="EC Reference Channels" value="Two"/>
+        <ctl name="EC Reference Channels" value="One"/>
     </path>
 
     <path name="deep-buffer-playback">
@@ -2056,6 +2056,13 @@
         <ctl name="RX_CDC_DMA_RX_1_DL_HL Switch" value="1" />
     </path>
 
+    	
+    <path name="play-fm speaker">
+        <ctl name="SLIMBUS_8 LOOPBACK Volume" value="1" />
+        <ctl name="PRI_MI2S_RX Port Mixer SLIM_8_TX" value="1" />
+        <ctl name="PRI_MI2S_RX_DL_HL Switch" value="1" />
+    </path>
+    
     <path name="play-fm headphones">
         <ctl name="SLIMBUS_8 LOOPBACK Volume" value="1" />
         <ctl name="RX_CDC_DMA_RX_0 Port Mixer SLIM_8_TX" value="1" />
@@ -3116,6 +3123,7 @@
 
     <path name="handset-mic">
         <path name="amic3" />
+        <ctl name="ADC2 Volume" value="8" />
     </path>
 
     <path name="headphones">

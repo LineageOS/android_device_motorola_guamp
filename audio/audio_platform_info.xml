@@ -68,7 +68,7 @@
 	<usecase name="USECASE_VOWLAN_CALL" type="in" id="-1"/>
 	<usecase name="USECASE_VOWLAN_CALL" type="out" id="-1"/>
 	<usecase name="USECASE_AUDIO_PLAYBACK_FM" type="out" id="30"/>
-	<usecase name="USECASE_AUDIO_PLAYBACK_FM" type="in" id="38"/>
+	<usecase name="USECASE_AUDIO_PLAYBACK_FM" type="in" id="37"/>
 	<usecase name="USECASE_AUDIO_SPKR_CALIB_RX" type="out" id="30"/>
 	<usecase name="USECASE_AUDIO_SPKR_CALIB_TX" type="in" id="61"/>
 	<usecase name="USECASE_AUDIO_PLAYBACK_AFE_PROXY" type="out" id="5"/>
@@ -106,28 +106,28 @@
 	<device name="SND_DEVICE_OUT_SPEAKER_SAFE_AND_BT_A2DP" backend="speaker-and-bt-a2dp" interface="PRI_MI2S_RX-and-SLIMBUS_7_RX"/>
 	<device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface="PRI_MI2S_RX-and-SLIMBUS_7_RX"/>
 	<device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="PRI_MI2S_RX-and-SLIMBUS_7_RX"/>
-	<device name="SND_DEVICE_OUT_HEADPHONES" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_LINE" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOICE_HEADPHONES" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOICE_HEADSET" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOICE_LINE" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOLTE_NB_HEADPHONES" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOLTE_NB_HEADSET" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOLTE_NB_LINE" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_HANDSET" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOICE_HANDSET" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOICE_ANC_HANDSET" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOLTE_NB_HANDSET" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOLTE_NB_HAC_HANDSET" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOLTE_NB_HANDSET_TMUS" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_VOLTE_NB_ANC_HANDSET" interface="RX_CDC_DMA_RX_0"/>
-	<device name="SND_DEVICE_OUT_BT_SCO" interface="SLIMBUS_7_RX"/>
-	<device name="SND_DEVICE_OUT_BT_SCO_WB" interface="SLIMBUS_7_RX"/>
+	<device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_LINE" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOICE_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOICE_HEADSET" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOICE_LINE" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOLTE_NB_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOLTE_NB_HEADSET" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOLTE_NB_LINE" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_HANDSET" backend="handset" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOICE_HANDSET" backend="handset" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" backend="handset" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" backend="handset" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" backend="handset" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOICE_ANC_HANDSET" backend="handset" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOLTE_NB_HANDSET" backend="handset" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOLTE_NB_HAC_HANDSET" backend="handset" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOLTE_NB_HANDSET_TMUS" backend="handset" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_VOLTE_NB_ANC_HANDSET" backend="handset" interface="RX_CDC_DMA_RX_0"/>
+	<device name="SND_DEVICE_OUT_BT_SCO" backend="bt-sco" interface="SLIMBUS_7_RX"/>
+	<device name="SND_DEVICE_OUT_BT_SCO_WB" backend="bt-sco-wb" interface="SLIMBUS_7_RX"/>
 	<device name="SND_DEVICE_IN_BT_SCO_MIC" interface="SLIMBUS_7_RX"/>
 	<device name="SND_DEVICE_IN_BT_SCO_MIC_NREC" interface="SLIMBUS_7_RX"/>
 	<device name="SND_DEVICE_IN_BT_SCO_MIC_WB" interface="SLIMBUS_7_RX"/>
