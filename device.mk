@@ -67,7 +67,6 @@ PRODUCT_PACKAGES += \
     init.recovery.touch.rc
 
 # Shipping API level
-BOARD_API_LEVEL := 29
 BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 
