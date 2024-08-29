@@ -6,7 +6,7 @@
 #
 
 function vendor_imports() {
-    cat << EOF >> "$1"
+    cat <<EOF >>"$1"
 		"vendor/qcom/opensource/display",
 EOF
 }
