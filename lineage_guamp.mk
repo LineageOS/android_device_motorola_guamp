@@ -19,10 +19,10 @@ PRODUCT_DEVICE := guamp
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(9)
 PRODUCT_MANUFACTURER := motorola
+
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-BUILD_FINGERPRINT := "motorola/guamp_retail/guamp:11/RPXS31.Q2-58-17-7-3/ad9c24:user/release-keys"
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=guamp_retail \
-    PRIVATE_BUILD_DESC="guamp_retail-user 11 RPXS31.Q2-58-17-7-3 ad9c24 release-keys"
+    BuildDesc="guamp_retail-user 11 RPXS31.Q2-58-17-7-3 ad9c24 release-keys" \
+    BuildFingerprint=motorola/guamp_retail/guamp:11/RPXS31.Q2-58-17-7-3/ad9c24:user/release-keys \
+    DeviceProduct=guamp_retail
