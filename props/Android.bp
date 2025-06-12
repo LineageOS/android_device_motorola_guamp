@@ -1,0 +1,18 @@
+//
+// SPDX-FileCopyrightText: 2022-2024 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "carrier.retin.prop",
+    src: "carrier.retin.prop",
+    sub_dir: "props",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "hardware.sku.XT2083-4.prop",
+    src: "hardware.sku.XT2083-4.prop",
+    sub_dir: "props",
+    soc_specific: true,
+}

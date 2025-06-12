@@ -21,3 +21,7 @@ ro.hardware.keystore_desede=true
 
 # Radio
 ro.vendor.radio.imei.sv=29
+
+# SKU specific properties
+import /vendor/etc/props/carrier.${ro.boot.carrier}.prop
+import /vendor/etc/props/hardware.sku.${ro.boot.hardware.sku}.prop
