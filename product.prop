@@ -1,0 +1,3 @@
+# SKU specific properties
+import /product/etc/props/carrier.${ro.boot.carrier}.prop
+import /product/etc/props/hardware.sku.${ro.boot.hardware.sku}.prop
